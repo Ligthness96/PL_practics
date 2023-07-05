@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.zachetnoe_zadanie'
+    namespace 'com.example.PL_practics'
     compileSdk 33
 
     defaultConfig {
