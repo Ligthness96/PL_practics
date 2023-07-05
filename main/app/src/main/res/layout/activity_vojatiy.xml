@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/vojatiy_page"
+    tools:context=".VojatiyActivity">
+
+    <Button
+        android:id="@+id/sing_out_button2"
+        android:layout_width="201dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/my"
+        android:text="Выйти"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textVojatiy"
+        android:layout_width="316dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="36dp"
+        android:text="Вы вошли как вожатый!"
+        android:textAlignment="center"
+        android:textColor="@color/my"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_event_button"
+        android:layout_width="201dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="124dp"
+        android:backgroundTint="@color/my"
+        android:text="Добавить событие"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVojatiy" />
+
+    <Button
+        android:id="@+id/add_participant_button"
+        android:layout_width="201dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/my"
+        android:text="Добавить участника"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_event_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

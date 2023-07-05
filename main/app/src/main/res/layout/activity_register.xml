@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/nameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Имя"
+            android:inputType="text"
+            android:textColorHint="@color/my"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/black"
+            app:met_errorColor="#96230a"
+            app:met_singleLineEllipsis="true"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/surnameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Фамилия"
+            android:inputType="text"
+            android:textColorHint="@color/my"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/black"
+            app:met_errorColor="#96230a"
+            app:met_singleLineEllipsis="true"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/patronymicField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Отчество"
+            android:inputType="text"
+            android:textColorHint="@color/my"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/black"
+            app:met_errorColor="#96230a"
+            app:met_singleLineEllipsis="true"/>
+<!--        <com.rengwuxian.materialedittext.MaterialEditText-->
+<!--            android:id="@+id/postField"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Волонтер/Вожатый"-->
+<!--            android:inputType="text"-->
+<!--            android:textColorHint="@color/my"-->
+<!--            android:textSize="18sp"-->
+<!--            app:met_floatingLabel="highlight"-->
+<!--            app:met_baseColor="@color/black"-->
+<!--            app:met_errorColor="#96230a"-->
+<!--            app:met_singleLineEllipsis="true"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Выберите должность:"
+                android:textSize="18sp"/>
+            <Spinner
+                android:id="@+id/postField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/post_users"
+                />
+        </LinearLayout>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/divisionField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Дивизион"
+            android:inputType="number"
+            android:textColorHint="@color/my"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/black"
+            app:met_errorColor="#96230a"
+            app:met_singleLineEllipsis="true"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/phoneField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Номер телефона"
+            android:inputType="phone"
+            android:textColorHint="@color/my"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/black"
+            app:met_errorColor="#96230a"
+            app:met_singleLineEllipsis="true"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/mailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Почта (это также ваш логин)"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/my"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/black"
+            app:met_errorColor="#96230a"
+            app:met_singleLineEllipsis="true"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/passField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="пароль"
+            android:inputType="textVisiblePassword"
+            android:textColorHint="@color/my"
+            android:textSize="18sp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/black"
+            app:met_errorColor="#96230a"
+            app:met_singleLineEllipsis="true"
+            app:met_minCharacters="6"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

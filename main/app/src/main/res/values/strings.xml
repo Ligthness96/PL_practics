@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">practic</string>
+    <string name="vhod1">Войдите в ваш аккаунт:</string>
+    <string name="vhod2">Войти</string>
+    <string name="login_text">логин</string>
+    <string name="password_text">пароль</string>
+    <string name="register_text">Нету аккаунта? Зарегистрируйся!</string>
+</resources>
